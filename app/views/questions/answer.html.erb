@@ -1,8 +1,6 @@
-<%= params[:question] %>
-<br>
-<%= "--You", class: interlocutor %>
-<br>
-<br>
+<p> <%= params[:question] %> </p>
+<p class=interlocutor>"--You" </p>
+
 
 <%if params[:question] == "I am going to work" %>
   <%= "Great!" %>
@@ -11,8 +9,7 @@
   <% else %>
   <%= "I don't care, get dressed and go to work!" %>
 <% end %>
-<br>
-<%= "--Your coach", class: interlocutor %>
-<br>
-<br>
+<p class=interlocutor>"--Your coach" </p>
+
+
 <%= link_to 'Ask', ask_path %>
