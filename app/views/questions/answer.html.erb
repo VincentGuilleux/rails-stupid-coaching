@@ -1,7 +1,6 @@
 <p> <%= params[:question] %> </p>
 <p class=interlocutor>"--You" </p>
 
-<p>Ask your coach anything</p>
 <%if params[:question] == "I am going to work" %>
   <%= "Great!" %>
   <% elsif params[:question][-1] == "?"  %>
